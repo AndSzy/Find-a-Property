@@ -1,0 +1,12 @@
+#map {
+  width: 100%;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #f8f9fa;
+}
