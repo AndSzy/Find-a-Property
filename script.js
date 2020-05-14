@@ -61,6 +61,10 @@ function start() {
       return response.json();
     })
     .then(morena => {
+      // REMOVING LOADING DIV
+      let loading = document.getElementById('loading');
+      loading.classList.add('notVisible');
+
       // CHANGING THE CENTER OF MAP
       //////////////////////////////////
       map.setCenter(centerMap);
@@ -71,6 +75,8 @@ function start() {
       const left = document.querySelector("#left");
       const right = document.querySelector("#right");
       let card;
+
+
 
       // Creating Elements
       function createCard() {

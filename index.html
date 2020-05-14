@@ -18,6 +18,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
       <a href="#" class="navbar-brand">Find a Property</a>
     </nav>
+    <!-- Loading -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+    </div>
 
     <!-- Main Content -->
     <section id="main">
@@ -32,7 +36,9 @@
             <!-- Froms -->
             <form action="">
               <div class="form-group row">
-                <label for="place" class="col-md-4 col-form-label">Wybierz miejsce:</label>
+                <label for="place" class="col-md-4 col-form-label"
+                  >Wybierz miejsce:</label
+                >
                 <div class="col">
                   <select class="form-control" id="place">
                     <option selected value="morena">Morena</option>
@@ -41,7 +47,7 @@
                 </div>
               </div>
 
-<!-- Additional functionality will be added later -->
+              <!-- Additional functionality will be added later -->
 
               <!-- <div class="form-group row">
                 <label for="time" class="col-md-4 col-form-label">Wybierz miesiac:</label>
@@ -57,26 +63,18 @@
 
             <h1>Mieszkania na sprzedaz:</h1>
             <div class="row">
+              <div class="col-md-6" id="left"></div>
 
-              <div class="col-md-6" id="left">
-
-              </div>
-
-              <div class="col-md-6" id="right">
-
-              </div>
-
+              <div class="col-md-6" id="right"></div>
             </div>
-
           </div>
-
         </div>
       </div>
     </section>
 
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
     <script
